@@ -1,0 +1,62 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+:root{
+    --azul-kraft: #1e5799;
+}
+html{
+    font-size: 62.5%;
+}
+body{
+    background-image: url("../img/imagem_fundo.jpg");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+}
+main{
+    display: flex;
+    font-size: 1.6rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+}
+.cabecalho_btn_voltar{
+    color: #FFF;
+    font-size: 2rem;
+    padding:0.2rem;
+}
+
+.form{
+    background-color: rgba(255,255,255,0.7);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    border: #000 solid 2px;
+    padding: 8rem 5rem;
+    gap: 10px;
+    border-radius: 10px;
+}
+.form div{
+    padding: 2%;
+}
+
+.form_div_input{
+    padding: 2% 15%;
+    margin-top: 2px;
+    border: solid #000 2px;
+    border-radius: 1rem;
+}
+.form_btn_login{
+    padding: 5%;
+    border: none;
+    border-radius: 300px;
+    cursor: pointer;
+    background-color:var(--azul-kraft);
+    color: #FFF;
+}
