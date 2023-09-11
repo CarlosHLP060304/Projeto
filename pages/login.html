@@ -13,22 +13,26 @@
     </header>
     <main>
         <form action="" class="form">
-            <div class="" style="display: flex; gap: 40px;">
+            <!-- <div class="" style="display: flex; gap: 40px;">
                 <a href=""><img src="../img/icone_google.png" alt="icone_google" width="50px" height="50px"></a>
                 <a href=""><img src="../img/icone_facebook.png" alt="icone_facebook" width="50px" height="50px"></a>
-            </div>
-            <div style="display: flex;align-items: center;">
+            </div> -->
+            <!-- <div style="display: flex;align-items: center;">
                 <div style="border-top: 1px solid black;width: 10rem;"></div>
                 <span style="margin: 5px;">Ou</span>
                 <div style="border-top: 1px solid black;width: 10rem;"></div>
-            </div>
+            </div> -->
             <div class="form_login">
-                <label for="" class="form_div_label">Login</label>
-                <input type="text" class="form_div_input" required>
+                <label for="login" class="form_div_label">Login</label>
+                <input type="text" class="form_div_input"  id = "login" required>
             </div>
             <div class="form_senha">
-                <label for="" class="form_div_label">Senha</label>
-                <input type="password" class="form_div_input" required>
+                <label for="senha" class="form_div_label">Senha</label>
+                <input type="password" class="form_div_input"  id= "senha" required >
+            </div>
+            <div style="display: flex; gap: 15px;">
+                <input type="checkbox" name="" id="mostrar_senha">
+                <label for="mostrar_senha">Mostrar senha</label>
             </div>
             <input type="submit" value="Fazer Login" class="form_btn_login">
             <a href="" style="color:purple;">Esqueceu a senha?</a>
@@ -36,5 +40,6 @@
         </form>
 
     </main>
+    <script src="../js/dom.js"></script>
 </body>
 </html>
