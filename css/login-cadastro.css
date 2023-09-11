@@ -1,15 +1,18 @@
-*{
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
-:root{
+
+:root {
     --azul-kraft: #1e5799;
 }
-html{
+
+html {
     font-size: 62.5%;
 }
-body{
+
+body {
     background-image: url("../img/imagem_fundo.jpg");
     background-attachment: fixed;
     background-position: center;
@@ -17,7 +20,8 @@ body{
     background-size: cover;
     height: 100vh;
 }
-main{
+
+main {
     display: flex;
     font-size: 1.6rem;
     display: flex;
@@ -26,37 +30,44 @@ main{
     align-items: center;
     height: 80vh;
 }
-.cabecalho_btn_voltar{
+
+.cabecalho_btn_voltar {
     color: #FFF;
     font-size: 2rem;
-    padding:0.2rem;
+    padding: 0.2rem;
 }
 
-.form{
-    background-color: rgba(255,255,255,0.7);
+.container_form_login,.container_form_cadastro {
+    background-color: rgba(255, 255, 255, 0.7);
+    border: #000 solid 2px;
+    border-radius: 10px;
+}
+
+.form {
     display: flex;
     align-items: center;
     flex-direction: column;
-    border: #000 solid 2px;
-    padding: 8rem 5rem;
+    padding: 2rem 2rem;
     gap: 10px;
-    border-radius: 10px;
-}
-.form div{
-    padding: 2%;
 }
 
-.form_div_input{
+
+.form_div_input {
     padding: 2% 10% 2% 2%;
     margin-top: 2px;
     border: solid #000 2px;
     border-radius: 1rem;
 }
-.form_btn_login{
+
+.form_btn_login {
     padding: 5%;
     border: none;
     border-radius: 300px;
     cursor: pointer;
-    background-color:var(--azul-kraft);
+    background-color: var(--azul-kraft);
     color: #FFF;
+}
+
+.none {
+    display: none;
 }

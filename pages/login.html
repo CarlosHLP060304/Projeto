@@ -1,10 +1,12 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
-    <link rel="stylesheet" href="../css/login.css">
+    <!-- Link to Bootstrap CSS -->
+    <link rel="stylesheet" href="../css/login-cadastro.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
 <body>
     <header>
@@ -12,33 +14,58 @@
         <p class="cabecalho_btn_voltar">Voltar</p>
     </header>
     <main>
-        <form action="" class="form">
-            <!-- <div class="" style="display: flex; gap: 40px;">
-                <a href=""><img src="../img/icone_google.png" alt="icone_google" width="50px" height="50px"></a>
-                <a href=""><img src="../img/icone_facebook.png" alt="icone_facebook" width="50px" height="50px"></a>
-            </div> -->
-            <!-- <div style="display: flex;align-items: center;">
-                <div style="border-top: 1px solid black;width: 10rem;"></div>
-                <span style="margin: 5px;">Ou</span>
-                <div style="border-top: 1px solid black;width: 10rem;"></div>
-            </div> -->
-            <div class="form_login">
-                <label for="login" class="form_div_label">Login</label>
-                <input type="text" class="form_div_input"  id = "login" required>
+        <div class="container mt-5">
+            <div class="row gap-2">
+                <div class="col-6">
+                    <button class="btn btn-primary btn-block" id="btn_login_cadastro">Login</button>
+                </div>
+                <div class="col-6">
+                    <button class="btn btn-secondary btn-block" id="btn_login_cadastro">Cadastro</button>
+                </div>
             </div>
-            <div class="form_senha">
-                <label for="senha" class="form_div_label">Senha</label>
-                <input type="password" class="form_div_input"  id= "senha" required >
-            </div>
-            <div style="display: flex; gap: 15px;">
-                <input type="checkbox" name="" id="mostrar_senha">
-                <label for="mostrar_senha">Mostrar senha</label>
-            </div>
-            <input type="submit" value="Fazer Login" class="form_btn_login">
-            <a href="" style="color:purple;">Esqueceu a senha?</a>
-            <p>Não tem uma conta? <a href="" style="color: purple;">Crie sua conta</a></p>
-        </form>
-
+            <form action="" class="form mt-3 container_form_login" id="login">
+                <h1 class="mb-4">Login</h1>
+                <div class="mb-3">
+                    <label for="login" class="form-label">Login</label>
+                    <input type="text" class="form-control" id="login" required>
+                </div>
+                <div class="mb-3">
+                    <label for="senha_login" class="form-label">Senha</label>
+                    <input type="password" class="form-control" id="senha_login" required>
+                </div>
+                <div class="mb-3 form-check">
+                    <input type="checkbox" class="form-check-input" id="mostrar_senha_login">
+                    <label class="form-check-label" for="mostrar_senha_login">Mostrar senha</label>
+                </div>
+                <button type="submit" class="btn btn-primary">Fazer Login</button>
+                <a href="#" class="mt-2" style="color: purple;">Esqueceu a senha?</a>
+                <p class="mt-3">Não tem uma conta? <a href="#" style="color: purple;">Crie sua conta</a></p>
+            </form>
+            <form action="" class="form mt-3 none container_form_cadastro" id="cadastro">
+                <h1 class="mb-4">Cadastrar-se</h1>
+                <div class="mb-3">
+                    <label for="cadastro_login" class="form-label">Nome</label>
+                    <input type="text" class="form-control" id="cadastro_username" required>
+                </div>
+                <div class="mb-3">
+                    <label for="cadastro_login" class="form-label">Email</label>
+                    <input type="text" class="form-control" id="cadastro_email" required>
+                </div>
+                <div class="mb-3">
+                    <label for="cadastro_login" class="form-label">Telefone</label>
+                    <input type="text" class="form-control" id="cadastro_telefone" required>
+                </div>
+                <div class="mb-3">
+                    <label for="senha_cadastro" class="form-label">Senha</label>
+                    <input type="password" class="form-control" id="senha_cadastro" required>
+                </div>
+                <div class="mb-3">
+                    <label for="senha_cadastro_confirm" class="form-label">Confirmar Senha</label>
+                    <input type="password" class="form-control" id="senha_cadastro_confirm" required>
+                </div>
+                <button type="submit" class="btn btn-primary">Fazer Cadastro</button>
+            </form>
+        </div>
     </main>
     <script src="../js/dom.js"></script>
 </body>
